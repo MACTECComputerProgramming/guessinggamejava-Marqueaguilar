@@ -19,15 +19,19 @@ public class JavaApplication82 {
     System.out.println("GEUSS: ");
             geuss = keyboard.nextInt();
             if (geuss == secretNum); {
-                corret = true;
+                correct = true;
                 System.out.println("YOU ARE RIGHT!");
             }
-            else if (geuss < secretNum) {
+            if (geuss < secretNum) {
+                    geuss = keyboard.nextInt();
                 System.out.println("HIGHER");
+                
             }
-            else if (geuss > secretNum) {
-                system.out.println("LOWER")
-            }
-    }
+             if (geuss > secretNum) {
+                    geuss = keyboard.nextInt();
+                System.out.println("LOWER");
+             }
+        }
     
+    }
 }
